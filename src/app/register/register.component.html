@@ -1,0 +1,71 @@
+
+<div class="side-crop">
+<img src="../../assets/images/box.PNG" >
+</div>
+<p>Welcome back! Please login to your account.</p>
+<div id="form_register">
+  <h1> VELOX AI </h1>
+        <label for="name"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            required
+            [(ngModel)]="model.username"
+            placeholder="Username"
+          />
+    
+          <label for="password"></label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            required
+            [(ngModel)]="model.password"
+            placeholder="Password"
+          />
+          
+
+          <label for="confirm-password"></label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            required
+            [(ngModel)]="confirmPassword"
+            placeholder="Confirm Password"
+          />
+          
+          <label for="firstName"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstName"
+            [(ngModel)]="model.firstName"
+            placeholder="First Name"
+          />
+          
+          <label for="lastName"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            [(ngModel)]="model.lastName"
+            placeholder="Last Name"
+          />
+          
+          <label for="phoneNumber"></label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneNumber"
+            [(ngModel)]="model.phoneNumber"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required
+            placeholder="Phone Number"
+          />
+          <br>
+        <button class="button button1"  (click)="register()">Register</button>
+
+   
+ </div> 
+
